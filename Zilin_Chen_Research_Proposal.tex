@@ -1,0 +1,103 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\linespread{1.3}
+
+\title{Research Proposal: Precision Manipulation in Robotic Upper Limbs through Multi-Modal Force Sensing}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+The development of dexterous robotic manipulation remains a fundamental challenge in robotics research. While significant progress has been made in visual perception for grasping, the integration of tactile and force feedback for precision manipulation of novel objects remains underdeveloped. This research proposal aims to address the gap in robotic manipulation by developing novel control strategies that leverage multi-modal force sensing to enable precise manipulation of various unknown objects in unstructured environments.
+
+Human manipulation capabilities far exceed current robotic systems, particularly in handling objects with varying material properties, shapes, and weights. This research will explore how advanced force sensing and control algorithms can bridge this gap, enabling robots to perform delicate manipulation tasks with human-like proficiency.
+
+\section{Background and Literature Review}
+Current approaches to robotic manipulation can be broadly categorized into vision-based and force-based methods. Vision-based approaches \cite{bohg2013survey} have shown remarkable success in object detection and grasp planning but often lack the fine-grained control necessary for precision tasks. Force-based methods \cite{yuan2017overview} provide direct feedback during manipulation but face challenges in generalization across diverse objects.
+
+Recent advances in sensor technology have enabled high-resolution tactile sensing \cite{dahiya2020large} that can capture rich contact information. However, effectively integrating this sensory data into control loops remains challenging. Machine learning approaches, particularly deep reinforcement learning \cite{levine2018learning}, have shown promise in learning manipulation policies directly from sensory data but typically require extensive training data.
+
+This research will build upon these foundations by developing novel methods for integrating high-dimensional force/tactile data with visual information to enable precise manipulation of previously unseen objects.
+
+\section{Research Objectives}
+The primary objectives of this research are:
+
+\begin{enumerate}
+    \item To design and implement a force sensing system for robotic hands capable of capturing multi-axis force data during manipulation tasks
+    \item To develop control algorithms that integrate force feedback with visual perception for adaptive grasping and manipulation
+    \item To create learning-based methods that can generalize manipulation skills across diverse object types and properties
+    \item To validate the proposed approaches through extensive experimental evaluation on real robotic systems
+    \item To establish benchmarks for precision manipulation performance with various categories of objects
+\end{enumerate}
+
+\section{Methodology}
+The research will proceed through the following methodological steps:
+
+\subsection{System Design and Integration}
+A robotic manipulation system will be developed consisting of:
+\begin{itemize}
+    \item A multi-fingered robotic hand equipped with high-resolution force/torque sensors
+    \item A robotic arm for positioning and orientation
+    \item Vision systems (RGB-D cameras) for object recognition and tracking
+    \item Data acquisition and processing infrastructure
+\end{itemize}
+
+\subsection{Control Framework Development}
+A hybrid control architecture will be developed that combines:
+\begin{itemize}
+    \item Model-based control for stable manipulation based on physical principles
+    \item Learning-based approaches for adapting to object variability
+    \item Fusion algorithms for integrating visual and force feedback
+\end{itemize}
+
+\subsection{Learning and Adaptation}
+Machine learning techniques will be employed to:
+\begin{itemize}
+    \item Learn manipulation policies through reinforcement learning in simulation
+    \item Transfer learned policies to real-world systems using domain adaptation
+    \item Enable continuous improvement through online learning during task execution
+\end{itemize}
+
+\subsection{Experimental Validation}
+A comprehensive evaluation protocol will be established to:
+\begin{itemize}
+    \item Test manipulation performance across object categories (varying size, weight, material, fragility)
+    \item Compare against state-of-the-art manipulation approaches
+    \item Quantify success rates, precision metrics, and adaptation capabilities
+\end{itemize}
+
+\section{Expected Contributions}
+This research expects to make the following contributions:
+\begin{itemize}
+    \item Novel algorithms for force-based manipulation control
+    \item A framework for multi-modal sensor integration in manipulation tasks
+    \item Public datasets and benchmarks for precision manipulation
+    \item Open-source implementation of successful approaches
+    \item Advances in robotic capabilities for real-world applications
+\end{itemize}
+
+\section{Timeline}
+\begin{itemize}
+    \item \textbf{Year 1}: Literature review, system setup, and preliminary experiments
+    \item \textbf{Year 2}: Development of core algorithms and simulation studies
+    \item \textbf{Year 3}: Real-world implementation and extensive validation
+    \item \textbf{Year 4}: Thesis writing, journal publications, and dissertation defense
+\end{itemize}
+
+\section{Conclusion}
+This research proposal outlines a comprehensive approach to advancing robotic manipulation capabilities through innovative use of force sensing technology. By combining rigorous theoretical development with practical implementation, this work aims to significantly advance the state of the art in robotic manipulation and contribute to the broader field of embodied intelligence. The proposed research aligns perfectly with Professor Shen's focus on embodied intelligence and precision upper limb control, offering exciting opportunities for fundamental advances with practical applications.
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}
