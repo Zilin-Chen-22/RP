@@ -1,46 +1,56 @@
 This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Zilin_Chen_Research_Proposal.aux
-The style file: apalike.bst
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: references.bib
-You've used 2 entries,
-            1935 wiz_defined-function locations,
-            486 strings with 4113 characters,
-and the built_in function-call counts, 954 in all, are:
-= -- 86
-> -- 51
-< -- 0
-+ -- 18
-- -- 18
-* -- 93
-:= -- 172
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 19
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 28
-empty$ -- 62
-format.name$ -- 20
-if$ -- 180
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 15
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 10 entries,
+            4087 wiz_defined-function locations,
+            897 strings with 9871 characters,
+and the built_in function-call counts, 9080 in all, are:
+= -- 764
+> -- 282
+< -- 67
++ -- 148
+- -- 58
+* -- 469
+:= -- 1368
+add.period$ -- 20
+call.type$ -- 10
+change.case$ -- 10
+chr.to.int$ -- 123
+cite$ -- 10
+duplicate$ -- 652
+empty$ -- 613
+format.name$ -- 68
+if$ -- 2097
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 124
+newline$ -- 61
+num.names$ -- 10
+pop$ -- 264
 preamble$ -- 1
-purify$ -- 19
-quote$ -- 0
-skip$ -- 21
+purify$ -- 0
+quote$ -- 2
+skip$ -- 711
 stack$ -- 0
-substring$ -- 69
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 343
+swap$ -- 570
+text.length$ -- 26
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 12
+top$ -- 5
+type$ -- 10
 warning$ -- 0
-while$ -- 6
-width$ -- 0
-write$ -- 28
+while$ -- 32
+width$ -- 12
+write$ -- 140

@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex Zilin_Chen_Research_Proposal"] 1755953578.8879 "Zilin_Chen_Research_Proposal.aux" "Zilin_Chen_Research_Proposal.bbl" "Zilin_Chen_Research_Proposal" 1755953580.03636 0
-  "./references.bib" 1755953565.40827 4954 3322fdb07dd10f6041109cfdf31d9386 ""
-  "/usr/local/texlive/2025/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Zilin_Chen_Research_Proposal.aux" 1755953579.57769 1309 bcb361457843a3120f79b5599e9a6a4f "pdflatex"
+["bibtex Zilin_Chen_Research_Proposal"] 1756105594.11932 "Zilin_Chen_Research_Proposal.aux" "Zilin_Chen_Research_Proposal.bbl" "Zilin_Chen_Research_Proposal" 1756105594.78296 0
+  "./references.bib" 1756105573.10129 9604 0dfcafd6b3c232d5684f8ffa24fc6590 ""
+  "/usr/local/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  "Zilin_Chen_Research_Proposal.aux" 1756105594.5114 1702 5a555475caccdc26b1b418b9863cb7ca "pdflatex"
   (generated)
   "Zilin_Chen_Research_Proposal.bbl"
   "Zilin_Chen_Research_Proposal.blg"
   (rewritten before read)
-["pdflatex"] 1755953579.08791 "/home/zilinchen/personal_items/research_proposal/Zilin_Chen_Research_Proposal.tex" "Zilin_Chen_Research_Proposal.pdf" "Zilin_Chen_Research_Proposal" 1755953580.03664 0
-  "/home/zilinchen/personal_items/research_proposal/Zilin_Chen_Research_Proposal.tex" 1755953577.38859 8819 5135a82829dfc7e016ad0c8bb6920dba ""
+["pdflatex"] 1756105594.24898 "/home/zilinchen/personal_items/research_proposal/Zilin_Chen_Research_Proposal.tex" "Zilin_Chen_Research_Proposal.pdf" "Zilin_Chen_Research_Proposal" 1756105594.78324 0
+  "/home/zilinchen/personal_items/research_proposal/Zilin_Chen_Research_Proposal.tex" 1756105592.69737 11918 ab6e39b053576120d09ede371f3c1121 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -76,9 +76,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1752820976 5523661 c4134bfcd954d4921624b40c79847918 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1752821058 3605130 35fef9c0154edbff9678f12af6e86aa5 ""
   "/usr/local/texlive/2025/texmf.cnf" 1752820972.49383 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "Zilin_Chen_Research_Proposal.aux" 1755953579.57769 1309 bcb361457843a3120f79b5599e9a6a4f "pdflatex"
-  "Zilin_Chen_Research_Proposal.bbl" 1755953579.08268 543 15690f48b63839943ddf25e1e51540e8 "bibtex Zilin_Chen_Research_Proposal"
-  "Zilin_Chen_Research_Proposal.tex" 1755953577.38859 8819 5135a82829dfc7e016ad0c8bb6920dba ""
+  "Zilin_Chen_Research_Proposal.aux" 1756105594.5114 1702 5a555475caccdc26b1b418b9863cb7ca "pdflatex"
+  "Zilin_Chen_Research_Proposal.bbl" 1756105594.24439 3799 0403dab797a989ea207a1bb741778452 "bibtex Zilin_Chen_Research_Proposal"
+  "Zilin_Chen_Research_Proposal.tex" 1756105592.69737 11918 ab6e39b053576120d09ede371f3c1121 ""
   (generated)
   "Zilin_Chen_Research_Proposal.aux"
   "Zilin_Chen_Research_Proposal.log"
