@@ -50,6 +50,15 @@ G.~Gulletta, W.~Erlhagen, and E.~Bicho, ``Human-like arm motion generation: A re
 \bibitem{yousef2011tactile}
 H.~Yousef, M.~Boukallel, and K.~Althoefer, ``Tactile sensing for dexterous in-hand manipulation in robotics—a review,'' \emph{Sensors and Actuators A: physical}, vol. 167, no.~2, pp. 171--187, 2011.
 
+\bibitem{suresh2024neuralfeels}
+S.~Suresh, H.~Qi, T.~Wu, T.~Fan, L.~Pineda, M.~Lambeta, J.~Malik, M.~Kalakrishnan, R.~Calandra, M.~Kaess \emph{et~al.}, ``Neuralfeels with neural fields: Visuotactile perception for in-hand manipulation,'' \emph{Science Robotics}, vol.~9, no.~96, p. eadl0628, 2024.
+
+\bibitem{newbury2023deep}
+R.~Newbury, M.~Gu, L.~Chumbley, A.~Mousavian, C.~Eppner, J.~Leitner, J.~Bohg, A.~Morales, T.~Asfour, D.~Kragic \emph{et~al.}, ``Deep learning approaches to grasp synthesis: A review,'' \emph{IEEE Transactions on Robotics}, vol.~39, no.~5, pp. 3994--4015, 2023.
+
+\bibitem{andrychowicz2020learning}
+O.~M. Andrychowicz, B.~Baker, M.~Chociej, R.~Jozefowicz, B.~McGrew, J.~Pachocki, A.~Petron, M.~Plappert, G.~Powell, A.~Ray \emph{et~al.}, ``Learning dexterous in-hand manipulation,'' \emph{The International Journal of Robotics Research}, vol.~39, no.~1, pp. 3--20, 2020.
+
 \bibitem{van2020large}
 L.~Van~Duong \emph{et~al.}, ``Large-scale vision-based tactile sensing for robot links: Design, modeling, and evaluation,'' \emph{IEEE Transactions on Robotics}, vol.~37, no.~2, pp. 390--403, 2020.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.18)  25 AUG 2025 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.18)  27 AUG 2025 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -231,9 +231,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [3]
 
-[4]
+[4] (./Zilin_Chen_Research_Proposal.bbl
 
-[5] (./Zilin_Chen_Research_Proposal.bbl)
+[5])
 
 [6] (./Zilin_Chen_Research_Proposal.aux)
  ***********
@@ -242,15 +242,15 @@ L3 programming layer <2025-07-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3429 strings out of 467816
- 49310 string characters out of 5432258
- 456618 words of memory out of 5000000
- 32024 multiletter control sequences out of 15000+600000
+ 3432 strings out of 467816
+ 49376 string characters out of 5432258
+ 458630 words of memory out of 5000000
+ 32027 multiletter control sequences out of 15000+600000
  638203 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,1104b,223s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,6n,65p,2058b,242s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on Zilin_Chen_Research_Proposal.pdf (6 pages, 159495 bytes).
+Output written on Zilin_Chen_Research_Proposal.pdf (6 pages, 150953 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
