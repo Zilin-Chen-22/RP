@@ -1,0 +1,84 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="第 1 页" id="gaKlwKUK5D3pyozP7SZm">
+    <mxGraphModel dx="1360" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-22" value="Research Objectives" style="swimlane;startSize=30;horizontal=1;childLayout=treeLayout;horizontalTree=0;sortEdges=1;resizable=0;containerType=tree;fontSize=16;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="14" y="40" width="800" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-23" value="&lt;div&gt;Electroadhesive Perching and&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Sustained Hanging of UAVs using Electrorheological Fluids&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;spacing=1;fontSize=15;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="50" y="50" width="700" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-24" value="Soft Materials" style="whiteSpace=wrap;html=1;spacing=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="55" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-25" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-23" target="OG1mk3A9VGMp7If6NsJG-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-26" value="Flight Controller" style="whiteSpace=wrap;html=1;spacing=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="325" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-27" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-23" target="OG1mk3A9VGMp7If6NsJG-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-28" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-23" target="OG1mk3A9VGMp7If6NsJG-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0.49999999999994316" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-29" value="Computer Version" style="whiteSpace=wrap;html=1;spacing=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="595" y="140" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-30" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-24" target="OG1mk3A9VGMp7If6NsJG-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-69.50000000000006" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-31" value="&lt;font&gt;Perching on various surfaces&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=10;spacing=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="20" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-39" value="&lt;font&gt;Execute Target Approach in Designated Posture&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=10;spacing=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="280" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-38" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-26" target="OG1mk3A9VGMp7If6NsJG-39" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2.999999999999943" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-33" value="&lt;font&gt;Arrive at Specified Coordinates&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=10;spacing=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="420" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-32" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-26" target="OG1mk3A9VGMp7If6NsJG-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-69.50000000000006" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-37" value="&lt;font&gt;Positioning and navigation&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=10;spacing=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="560" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-36" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-29" target="OG1mk3A9VGMp7If6NsJG-37" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="107.99999999999994" y="290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-35" value="&lt;font&gt;Identifying perchable objects&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=10;spacing=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="690" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-34" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-29" target="OG1mk3A9VGMp7If6NsJG-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-69.50000000000006" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-43" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=1;curved=0;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;startSize=6;endSize=6;spacing=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="OG1mk3A9VGMp7If6NsJG-22" source="OG1mk3A9VGMp7If6NsJG-24" target="OG1mk3A9VGMp7If6NsJG-44" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="240" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OG1mk3A9VGMp7If6NsJG-44" value="&lt;font&gt;Long working hours without failure&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=10;spacing=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="OG1mk3A9VGMp7If6NsJG-22" vertex="1">
+          <mxGeometry x="150" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

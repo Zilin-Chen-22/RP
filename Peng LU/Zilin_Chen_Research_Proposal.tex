@@ -15,29 +15,92 @@
 \setlength{\abovecaptionskip}{5pt}
 \setlength{\belowcaptionskip}{0pt}
 
-\title{Research Proposal: A Control Framework for Electroadhesive Perching and Sustained Hanging of UAVs using Electrorheological Fluids}
-\author{Zilin Chen, PHD Proposal in Dept.\;of ME, HKU}
-\date{}
-
 \begin{document}
 
-\maketitle
+\begin{center}
+    \normalsize{Application for Admission to the PHD Programme in the Faculties of Engineering}\\
+    \textbf{\Large{A Control Framework for Electroadhesive Perching and Sustained Hanging of UAVs using Electrorheological Fluids}}\\
+    \normalsize{Zilin Chen}
+\end{center}
 
-\section{Introduction}
-
-\section{Literature Review}
-
-\section{Research Objectives}
+\section{Background}
+Nowadays, drones are becoming a hit in all around the world. Data shows that in 2022, the market size of the global drone industry is over \$30 billion, and it is expected to expand to \$55 billion in 2030~\cite{nonami2025overview}. People use UAVs in all kinds of areas, including remote sensing, photogrammetry, package-delivering etc.~\cite{COLOMINA201479} Drones have great flexibility and can reach locations that are not restricted by terrain. At the same time, compared to ground mobile robots, drones usually have higher moving speed.\\
+However, drones are also subject to certain limitations. Their flight endurance is considerably shorter than that of ground-based mobile robots, typically lasting only a few hours—often less than one hour~\cite{kim2018drone}. Despite various attempts to extend drone flight time, the energy density of existing storage materials remains a fundamental constraint, resulting in still limited operational duration. It is noted that in many applications, drones are only required to hover at designated locations to perform tasks. Yet, hovering itself consumes a significant amount of energy, which largely constitutes wasted power since no useful locomotion is involved.\\
+To substantially extend the drone’s operational endurance, we propose a perching mechanism that allows the drone to attach to static structures, enabling complete shutdown of the rotors and eliminating the high energy consumption associated with stationary hovering. A key enabler of this approach is the use of electrorheological fluid (ERF), a smart material whose rapid and reversible adhesion properties make it ideally suited for this application. In contrast to other compliant gripping technologies—such as the positive-pressure layer jamming (PPLJ) developed by Professor Haijun Su’s team~\cite{crowley20223d} or conventional dielectric elastomer actuators (DEAs)—ERF exhibits superior performance in conforming to and adhering on relatively flat surfaces~\cite{o2008review}.\\
+Electrorheological fluids belong to a class of smart materials that undergo a reversible, electric-field-induced transition in rheological state. Typically consisting of dielectric particles dispersed in an insulating fluid, ERFs demonstrate a dramatic increase in viscosity under an applied electric field. When exposed to a sufficiently strong field, the particles polarize and rapidly form chain- or column-like microstructures aligned with the field direction. This transition leads to a near-instantaneous change from liquid-like to solid-like behavior, known as the electrorheological (ER) effect~\cite{liu2012electrorheological}.\\
+In the context of drone perching, ERF is integrated into the contact mechanism. Applying voltage induces solidification of the fluid, creating strong and controllable adhesion almost instantaneously. This allows the drone to perch securely on surfaces at various orientations—vertical, inverted, or inclined. When the voltage is removed, the ERF reverts to its liquid state, adhesion ceases, and detachment occurs with minimal energy cost~\cite{kuznetsov2022electrorheological}. This fast, reversible, and electrically switchable adhesion offers a robust technological foundation for energy-efficient perching in complex environments.\\
+Further advancing this concept, Professor Huichan Zhao and her team developed a novel variant of ERF named \textit{VSERF} (voltage-switchable electrorheological fluid)~\cite{pan2022stretchable}. This material demonstrates remarkable persistence in adhesion, capable of sustaining attachment for over 25 minutes per activation and accumulating more than 64 hours of total operation. Such performance provides a practical material solution for long-duration drone perching, significantly extending mission time without consuming propulsion energy.
+\vspace{20pt}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{key_tech.png}
+    \caption{\textbf{(a)}VSERF developed by Prof.\  Huichan Zhao and her team, can attach to different surfaces.~\cite{pan2022stretchable}\;\textbf{(b)}Demonstration for Betaflight-controller in a simulation environment.~\cite{mdss}\;\textbf{(c)}A lightweight small-scale object recognition system for drones, developed by Zhengxin Zhang based on YOLOv8~\cite{zhang2023drone}\;\textbf{(d)}System Architecture of the Drone Platform}
+\end{figure}
+\newpage
+\noindent
+In addition to the grasping mechanism, the integration of a flight controller and a visual recognition system is essential to enable the drone to autonomously identify and approach suitable perching locations.\\
+Numerous open-source flight controllers are available for quadrotor UAVs. Among these, an open-source flight controller named \textit{Betaflight}~\cite{betaflight} is particularly notable for its high performance and is widely adopted in autonomous drone racing applications~\cite{kaufmann2023champion}. It offers substantial flexibility and controllability, facilitating precise trajectory tracking and attitude stabilization, which allows the drone to reliably achieve desired positions and orientations~\cite{qin2024time}.\\
+For visual recognition, existing systems such as YOLO and visual SLAM provide robust support for identifying perch-compatible objects. Professor Hongbin Ji and his team developed a feature pyramid network that enhances image resolution, improving the drone’s capability to detect small objects~\cite{chen2023high}. Similarly, Zhengxin Zhang introduced an improved YOLOv8-based algorithm that enhances detection performance for small, densely clustered targets~\cite{zhang2023drone}. These advances are crucial for enabling drones to locate typical perching structures such as streetlights and tree branches with high accuracy.
 
 \section{Methodology}
+The proposed research adopts a systematic approach integrating theoretical modeling, simulation, learning-based policy design, and physical system integration. The methodology is organized into three main phases:
+
+\subsection{Modeling and Simulation Studies}
+The research will commence with the development of high-fidelity kinematic and dynamic models of the drone. Physics-based simulations will be employed to analyze both flight and perching stability, thereby informing the design of control strategies and enabling reliable adsorption perching on surfaces with arbitrary inclination.
+
+\subsection{Learning-Based Perching Policy Development}
+To enhance robustness and generalizability, learning-based methods will be incorporated alongside model-based control. Reinforcement learning policies will be trained in simulation to enable fully autonomous operation—including visual identification of suitable perching sites, navigation to the target, and execution of the attachment procedure.
+
+\subsection{System Integration and Experimental Validation}
+All sensing, control, and perception modules will be integrated into a unified UAV platform. This includes an autonomous navigation controller, a VSERF-based perching mechanism, and a vision system. Comprehensive real-world experiments will be conducted to evaluate the system's performance, focusing on success rate of autonomous perching, attachment time, adaptability to different surfaces, and overall extension of flight endurance.
 
 \section{Timeline}
+The proposed research will be conducted over a standard four-year PhD period, with each year dedicated to specific milestones and research objectives. The timeline is designed to ensure systematic progression from theoretical development and simulation to full system integration and experimental validation.
 
-\section{Conclusion}
-123\cite{10415857}
+\begin{itemize}
+\item \textbf{Year 1: Foundation and Modeling}
+\begin{itemize}
+\item \textit{Months 1--6}: Comprehensive literature review and detailed study of state-of-the-art in electrorheological fluids, UAV perching mechanisms, and autonomous flight control.
+\item \textit{Months 7--12}: Development of high-fidelity dynamic and kinematic models of the quadrotor UAV and the VSERF-based perching system. Initial implementation of physics-based simulations in a high-fidelity environment.
+\end{itemize}
+\item \textbf{Year 2: Control Strategy and Learning Policy Development}
+\begin{itemize}
+    \item \textit{Months 13--18}: Design and refinement of the hybrid control framework, integrating model-based flight control with the perching sequence. Development of the transition logic for switching between free-flight and perching modes.
+    \item \textit{Months 19--24}: Training and validation of reinforcement learning policies in simulation for autonomous target identification, precise approach, and adhesion activation. Integration of visual recognition modules into the simulation pipeline.
+\end{itemize}
+
+\item \textbf{Year 3: System Integration and Preliminary Experiments}
+\begin{itemize}
+    \item \textit{Months 25--30}: Hardware development and integration, including the assembly of the VSERF perching mechanism, integration with the UAV platform, and calibration of sensors and actuators.
+    \item \textit{Months 31--36}: Initial bench-testing and controlled flight tests. Validation of individual subsystems, including adhesion force tests and evaluation of the vision-based targeting system in real-world conditions.
+\end{itemize}
+
+\item \textbf{Year 4: Experimental Validation, Dissemination, and Thesis Completion}
+\begin{itemize}
+    \item \textit{Months 37--42}: Extensive real-world experimental trials to evaluate system performance under various scenarios (e.g., different surface materials, angles, and environmental conditions).
+    \item \textit{Months 43--48}: Data analysis, performance optimization, and refinement of the control framework. Preparation of journal and conference publications. Writing and finalization of the PhD thesis.
+\end{itemize}
+\end{itemize}
+
+\section{Outcomes and Value}
+This research aims to deliver both theoretical insights and practical technologies that advance the capabilities of unmanned aerial vehicles. The anticipated outcomes include:
+
+\begin{itemize}
+    \item A novel control framework integrating model-based and learning-based methods for robust and autonomous UAV perching.
+    \item A hardware prototype demonstrating energy-efficient perching and sustained hanging using VSERF technology.
+    \item High-fidelity simulation models and datasets that can be reused by the research community.
+    \item Publications in top-tier robotics and smart materials conferences and journals.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{direction.png}
+    \caption{Research Framework Diagram}
+\end{figure}
+\noindent
+The successful implementation of this project will significantly extend UAV operational endurance in applications such as environmental monitoring, infrastructure inspection, and surveillance. By enabling drones to perch for long periods without consuming energy, this technology reduces operational costs and increases mission flexibility. Furthermore, the integration of smart materials like VSERF into robotic systems opens new pathways for future research in adaptive and energy-aware autonomous systems.\\
+The primary challenge and innovative aspect of this project lies in the requirement that the drone must autonomously identify a suitable perching target and approach it in a specific spatial attitude. Unlike conventional flight controllers, which permit continuous obstacle avoidance even near the target, our approach necessitates a direct and precise trajectory alignment in the final approach phase. Moreover, the critical timing for activating the electroadhesive mechanism and disengaging the flight control system upon contact introduces a complex hybrid control challenge. The development of a robust control strategy capable of handling this transition seamlessly represents the core innovation of this work.
 
 \vspace{100pt}
-
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
