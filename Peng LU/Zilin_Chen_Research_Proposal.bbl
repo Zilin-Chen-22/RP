@@ -68,4 +68,7 @@ C.~Qin, J.~Chen, Y.~Lin, A.~Goudar, A.~P. Schoellig, and H.~H.-T. Liu, ``Time-op
 \bibitem{chen2023high}
 Z.~Chen, H.~Ji, Y.~Zhang, Z.~Zhu, and Y.~Li, ``High-resolution feature pyramid network for small object detection on drone view,'' \emph{IEEE Transactions on Circuits and Systems for Video Technology}, vol.~34, no.~1, pp. 475--489, 2023.
 
+\bibitem{todorov2012mujoco}
+E.~Todorov, T.~Erez, and Y.~Tassa, ``Mujoco: A physics engine for model-based control,'' in \emph{2012 IEEE/RSJ International Conference on Intelligent Robots and Systems}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2012, pp. 5026--5033.
+
 \end{thebibliography}
