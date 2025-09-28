@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.18)  22 SEP 2025 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.18)  28 SEP 2025 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,40 +252,56 @@ Package pdftex.def Info: ./images/key_tech.png  used on input line 37.
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 
 [2 <./images/key_tech.png>]
+<./images/ORF.png, id=19, 1025.8325pt x 399.4925pt>
+File: ./images/ORF.png Graphic file (type png)
+<use ./images/ORF.png>
+Package pdftex.def Info: ./images/ORF.png  used on input line 52.
+(pdftex.def)             Requested size: 273.14923pt x 106.37094pt.
+
 
 [3]
+<./images/SM.png, id=24, 1527.7075pt x 696.6025pt>
+File: ./images/SM.png Graphic file (type png)
+<use ./images/SM.png>
+Package pdftex.def Info: ./images/SM.png  used on input line 78.
+(pdftex.def)             Requested size: 455.24411pt x 207.5793pt.
 
-[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<./images/direction.png, id=27, 804.00375pt x 292.09125pt>
+
+[4 <./images/ORF.png>]
+
+[5 <./images/SM.png>]
+
+[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<./images/direction.png, id=37, 804.00375pt x 292.09125pt>
 File: ./images/direction.png Graphic file (type png)
 <use ./images/direction.png>
-Package pdftex.def Info: ./images/direction.png  used on input line 102.
+Package pdftex.def Info: ./images/direction.png  used on input line 149.
 (pdftex.def)             Requested size: 455.24411pt x 165.3884pt.
 
 
-[5 <./images/direction.png>] (./Zilin_Chen_Research_Proposal.bbl
+[7 <./images/direction.png>] (./Zilin_Chen_Research_Proposal.bbl
 
-[6])
+[8])
 
-[7] (./Zilin_Chen_Research_Proposal.aux)
+[9] (./Zilin_Chen_Research_Proposal.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4814 strings out of 467816
- 76086 string characters out of 5432258
- 480228 words of memory out of 5000000
- 33417 multiletter control sequences out of 15000+600000
+ 4834 strings out of 467816
+ 76458 string characters out of 5432258
+ 480272 words of memory out of 5000000
+ 33437 multiletter control sequences out of 15000+600000
  635030 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,924b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on Zilin_Chen_Research_Proposal.pdf (7 pages, 473904 bytes).
+Output written on Zilin_Chen_Research_Proposal.pdf (9 pages, 569603 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

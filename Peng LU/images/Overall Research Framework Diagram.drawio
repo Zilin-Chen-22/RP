@@ -1,0 +1,44 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="第 1 页" id="hAPk2exY3qOHcRkzE9rx">
+    <mxGraphModel dx="880" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IDvMU7xYD56JGL0FUJDD-13" target="IDvMU7xYD56JGL0FUJDD-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-19" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Sim to Real&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDvMU7xYD56JGL0FUJDD-16">
+          <mxGeometry x="-0.2875" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-13" value="Simulation" style="swimlane;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="159" y="20" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-20" value="&lt;pre&gt;Modeling &amp;amp; Simulation&lt;/pre&gt;&lt;pre&gt;Perception &amp;amp; Planning&lt;/pre&gt;&lt;pre&gt;Hybrid Control Policy&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="IDvMU7xYD56JGL0FUJDD-13">
+          <mxGeometry x="10" y="28" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-15" value="Real World" style="swimlane;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="469" y="20" width="200" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-21" value="&lt;pre&gt;Hardware Development&lt;/pre&gt;&lt;pre&gt;Real World Experiments&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="IDvMU7xYD56JGL0FUJDD-15">
+          <mxGeometry x="10" y="38" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-17" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="IDvMU7xYD56JGL0FUJDD-15" target="IDvMU7xYD56JGL0FUJDD-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="552" y="170" as="sourcePoint" />
+            <mxPoint x="9" y="171" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="419" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IDvMU7xYD56JGL0FUJDD-18" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;Iterative Optimization&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDvMU7xYD56JGL0FUJDD-17">
+          <mxGeometry x="0.072" y="-1" relative="1" as="geometry">
+            <mxPoint x="14" y="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

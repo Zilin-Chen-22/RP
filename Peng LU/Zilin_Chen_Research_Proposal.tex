@@ -46,18 +46,65 @@ For \textbf{visual recognition}, existing systems such as YOLO and visual SLAM p
 During my previous research, I gained hands-on experience working with the core codebase of \textbf{\textit{Betaflight}}, where I utilized its open-source platform to develop a simulator for angular velocity planning and implemented a demonstration for attitude control. I also addressed the yaw angle optimization planning problem, which has provided me with a solid background in optimization-based trajectory planning. Additionally, my practical experience with \textbf{Open-MV} and computer vision has equipped me with the skills necessary for real-time target detection.
 
 \section{Methodology}
-The proposed research adopts a systematic approach integrating theoretical modeling, simulation, learning-based policy design, and physical system integration. The methodology is organized into three main phases:
+This research develops and validates a hierarchical control framework to enable fully autonomous UAV perching using VSERF\@. The methodology integrates four technical thrusts, progressing from modeling and simulation to physical validation, as shown in Figure~\ref{ORF}.
+\begin{figure}[http]
+    \centering
+    \includegraphics[width = 0.6\textwidth]{ORF.png}
+    \caption{\textbf{Research Framework.} The project integrates theoretical modeling, simulation, learning-based policy training, and hardware experimentation in an iterative loop to ensure robustness and Sim-to-Real transfer.}\label{ORF}
+\end{figure}
 
-\subsection{Modeling and Simulation Studies}
-The research will commence with the development of high-fidelity kinematic and dynamic models of the drone. Employing Physics-based simulations (e.g. MuJoCo~\cite{todorov2012mujoco}) to analyze both flight and perching stability, thereby informing the design of control strategies and enabling reliable adsorption perching on surfaces with arbitrary inclination.
-
-\subsection{Learning-Based Perching Policy Development}
-To enhance robustness and generalizability, learning-based methods will be incorporated alongside model-based control. Training reinforcement learning policies in simulation to enable fully autonomous operation—including visual identification of suitable perching sites, navigation to the target, and execution of the attachment procedure.
-
-\subsection{System Integration and Experimental Validation}
-All sensing, control, and perception modules are integrated into a unified UAV platform. This includes an autonomous navigation controller, a VSERF-based perching mechanism, and a vision system. The system's performance is evaluated through comprehensive real-world experiments, focusing on the success rate of autonomous perching, attachment time, adaptability to different surfaces, and the overall extension of flight endurance.
+\subsection{High-Fidelity System Modeling and Simulation}
+This phase creates a virtual testbed that accurately captures the dynamics of the UAV and the VSERF perching mechanism.
 
 
+\subsubsection{UAV Dynamics Modeling}
+We are going to derive a 6-degree-of-freedom (6-DOF) nonlinear dynamic model of the quadrotor, incorporating aerodynamic effects and motor dynamics. This model serves as the plant for controller design.
+
+\subsubsection{VSERF Contact Dynamics Modeling}
+A critical component is modeling the electroadhesive contact. We will establish a force model based on VSERF material properties, relating the applied electric field strength and contact area to the generated adhesive force and friction. This model will accounts for surface roughness and inclination.
+
+\subsubsection{Simulation Environment Setup}
+We will implement these models in \textbf{MuJoCo}~\cite{todorov2012mujoco}, a high-performance physics simulator well-suited for contact-intensive tasks. This simulator can simulate not only the various parameters of the flight process but also the unstable contact conditions during the adsorption process, making it ideal for this study.
+
+\subsection{Integrated Perception and Planning}
+This module enables the drone to autonomously identify perching sites and plan trajectories. We will deploy a lightweight convolutional neural network (CNN), based on an improved \textbf{YOLOv8} architecture~\cite{zhang2023drone}, for real-time object detection. The network identifies potential perching sites and assesses their suitability based on surface characteristics.\\
+After target identification, a Perspective-n-Point (PnP) algorithm, fused with IMU data, estimates the relative 6D pose of the target. A sampling-based planner then generates a smooth, collision-free trajectory to a pre-contact pose near the surface.
+
+\subsection{Hybrid Control Policy Development}
+The core innovation addresses the seamless transition from free flight to adhered perching through a hybrid control architecture governed by a finite state machine (FSM).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{SM.png}
+    \caption{\textbf{Hybrid Control State Machine.} The system transitions between discrete states based on sensor triggers, ensuring safe and precise mode switching during the perching maneuver.}\label{SM}
+\end{figure}
+
+\subsubsection{Model-Based Flight Controller}
+For gross motion, a Nonlinear Model Predictive Control (NMPC) or a cascaded PID controller ensures stable trajectory tracking.
+
+\subsubsection{Learning-Based Final Approach Policy}
+The final approach and contact phase require delicate maneuvers. We train a \textbf{Deep Reinforcement Learning (DRL)} policy, using the Soft Actor-Critic (SAC) algorithm in simulation, to master this phase. The policy maps states to continuous drone commands, minimizing contact impulse and achieving perfect surface alignment.
+
+\subsubsection{Mode Switching Logic}
+A finite state machine (Figure~\ref{SM}) manages transitions between operational states. Key triggers include proximity to the target, contact detection via a touchdown sensor or IMU data, and successful adhesion confirmation.
+
+\subsection{Hardware Integration and Experimental Validation}
+We build a prototype to validate the simulation results in real-world conditions.
+
+\subsubsection{Hardware Platform}
+The hardware platform consists of:
+\begin{itemize}
+    \item A custom-built quadrotor with a \textbf{Betaflight} flight controller.
+    \item A lightweight \textbf{VSERF perching module} with a high-voltage driver circuit.
+\end{itemize}
+
+\subsubsection{System Integration}
+We establish a robust communication protocol (e.g., ROS 2) between the computing unit, flight controller, and the perching mechanism. A systematic experimental evaluation measures key performance metrics:
+\begin{itemize}
+    \item Perching Success Rate on different surfaces and angles.
+    \item Energy Consumption compared to stationary hovering.
+    \item Attachment/Detachment Time and long-term reliability.
+\end{itemize}
 
 \section{Timeline}
 The research will last for a standard four-year PhD period, structured to progress systematically from theoretical development and simulation to system integration and experimental validation.
