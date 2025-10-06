@@ -41,6 +41,14 @@ Existing flight control systems, such as the widely adopted \textbf{Betaflight} 
 \subsection{Past Experience}
 During my previous research, I gained hands-on experience working with the core codebase of \textbf{Betaflight}, where I utilized its open-source platform to develop a simulator for angular velocity planning and implemented a demonstration for attitude control. I also addressed the yaw angle optimization planning problem, which has provided me with a solid background in optimization-based trajectory planning. Additionally, my practical experience with \textbf{Open-MV} and computer vision has equipped me with the skills necessary for real-time target detection and environment perception.
 
+\section{Preliminary Design}
+To enable efficient maneuverability in complex environments, this paper presents a novel transformable UAV\@. Inspired by existing mechanical designs in the literature, the drone utilizes a motor to actuate structural changes, thereby dynamically altering its arm length and moment of inertia.\\
+In its default state, the distance from the drone's geometric center to the motor's geometric center is $116.59 mm$. After deformation, this distance is reduced to a minimum of $90.96 mm$, reducing the drone's size by $21.98\%$. Simultaneously, the drone's moment of inertia has significantly changed. In its default state, the principal moment of inertia along the z-axis (the direction of the motor's rotation vector) is $723,974.16 g/{mm}^2$. After deformation, it is reduced to $482,976.47 g/{mm}^2$, a $33.29\%$ reduction.
+% \begin{figure}
+%     \centering
+%     \includegraphics[options]{name}
+% \end{figure}
+
 \section{Methodology}
 This research develops and validates a hierarchical control framework for autonomous navigation of transformable UAVs in constrained environments. The methodology integrates four technical thrusts, progressing from modeling and simulation to physical validation.
 
