@@ -9,6 +9,9 @@
 \usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{float}
 \usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{siunitx}
 \linespread{1.5}
 \graphicspath{{./images}}
 
@@ -42,12 +45,52 @@ Existing flight control systems, such as the widely adopted \textbf{Betaflight} 
 During my previous research, I gained hands-on experience working with the core codebase of \textbf{Betaflight}, where I utilized its open-source platform to develop a simulator for angular velocity planning and implemented a demonstration for attitude control. I also addressed the yaw angle optimization planning problem, which has provided me with a solid background in optimization-based trajectory planning. Additionally, my practical experience with \textbf{Open-MV} and computer vision has equipped me with the skills necessary for real-time target detection and environment perception.
 
 \section{Preliminary Design}
-To enable efficient maneuverability in complex environments, this paper presents a novel transformable UAV\@. Inspired by existing mechanical designs in the literature, the drone utilizes a motor to actuate structural changes, thereby dynamically altering its arm length and moment of inertia.\\
-In its default state, the distance from the drone's geometric center to the motor's geometric center is $116.59 mm$. After deformation, this distance is reduced to a minimum of $90.96 mm$, reducing the drone's size by $21.98\%$. Simultaneously, the drone's moment of inertia has significantly changed. In its default state, the principal moment of inertia along the z-axis (the direction of the motor's rotation vector) is $723,974.16 g/{mm}^2$. After deformation, it is reduced to $482,976.47 g/{mm}^2$, a $33.29\%$ reduction.
-% \begin{figure}
-%     \centering
-%     \includegraphics[options]{name}
-% \end{figure}
+To enable efficient maneuverability in complex environments, this paper presents a novel transformable UAV\@. Inspired by existing mechanical designs in the literature, the drone utilizes a motor to actuate structural changes, thereby dynamically altering its arm length and moment of inertia.
+
+\subsection{Basic Overview}
+This is a transformable UAV with a design weight of $258.07 g$ and a volume of $155.00 cm^2$. In addition to the traditional four brushless motors, the drone only adds a small servo to control the changes in the shape of the drone. 
+\begin{figure}[H]
+    \centering
+    
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Shapes_with_Circle.png}
+        \caption{}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Final.png}
+        \caption{}
+    \end{subfigure}
+
+    \caption{Diagram of a Transformable UAV\@. \textbf{(a)} Circle 1 represents the default state of the drone, and circle 2 represents the most transformed state. \textbf{(b)} Top view of the drone design.}
+\end{figure}
+
+\noindent
+In its default state, the distance from the drone's geometric center to the motor's geometric center is $116.59 mm$. After deformation, this distance is reduced to a minimum of $90.96 mm$, reducing the drone's size by $21.98\%$. Simultaneously, the drone's moment of inertia has significantly changed. In its default state, the principal moment of inertia along the z-axis (the direction of the motor's rotation vector) is $723,974.16 g\cdot{mm}^2$. After deformation, it is reduced to $482,976.47 g\cdot{mm}^2$, a $33.29\%$ reduction.
+\begin{table}[H]
+    \centering
+    \caption{Comparison of Parameters between Default and Minimum States}
+    \begin{tabular}{l 
+                    S[table-format=3.2] 
+                    S[table-format=3.2] 
+                    S[table-format=2.2]}
+        \toprule
+        \textbf{Parameter} & \textbf{Default State} & \textbf{Minimum State} & \textbf{Reduction (\%)} \\
+        \midrule
+        Radius (\si{\milli\meter}) & 116.59 & 90.96 & 21.98 \\
+        $I_{xx}$ ($g\cdot{mm}^2$) & 395167.05 & 274668.24 & 30.49 \\
+        $I_{yy}$ ($g\cdot{mm}^2$) & 408153.32 & 287654.50 & 29.52 \\
+        $I_{zz}$ ($g\cdot{mm}^2$) & 723974.16 & 482976.47 & 33.29 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\subsection{Major innovations}
+A key distinction of this UAV is its minimalist deformation mechanism, which requires only a single servo for actuation. This design choice yields two primary benefits: it significantly enhances structural stability by maintaining symmetry, and it simplifies the control strategy by constraining the drone to well-understood symmetrical flight states. Crucially, this transformation can be executed seamlessly mid-air, enabling the drone to adapt to its environment without interrupting its mission.\\
+This design not only minimizes the drone’s spatial footprint but, more critically, significantly reduces its moment of inertia. This reduction in inertia, while inherently decreasing static stability, provides a substantial boost to maneuverability and agility. Consequently, when navigating challenging environments like narrow gaps or cluttered terrain, the drone can leverage this enhanced responsiveness—a capability that extends far beyond the simple advantage of a smaller physical size. A key advantage of this transformation lies in its unified control strategy. Unlike other transformable platforms that require complex, multi-controller frameworks to handle different dynamics, our design enables a single controller to operate seamlessly across all configurations. This not only drastically simplifies the software and hardware integration but also enhances system reliability by avoiding the complexities and failure modes associated with controller switching logic.
 
 \section{Methodology}
 This research develops and validates a hierarchical control framework for autonomous navigation of transformable UAVs in constrained environments. The methodology integrates four technical thrusts, progressing from modeling and simulation to physical validation.
@@ -105,10 +148,9 @@ This research delivers both theoretical advances and practical technologies that
     \item Publications in top-tier robotics and autonomous systems conferences and journals.
 \end{itemize}
 \noindent
-The successful implementation significantly expands UAV operational capabilities in applications such as precision agriculture, where drones can navigate through dense crop canopies and greenhouse structures; industrial inspection, enabling access to complex machinery and infrastructure; and search-and-rescue operations in collapsed structures. By enabling efficient navigation through constrained spaces without compromising conventional flight performance, this technology increases mission success rates and operational flexibility.\\
-The primary innovation of this project lies in addressing the coupled challenge of perception, planning, and control for a system with intentionally time-varying dynamics. Unlike conventional approaches that treat morphing as a separate operational mode, our framework considers configuration as a continuous decision variable within the motion planning and control optimization. How to balance deformation stability and the benefits that deformation can bring is very important and will also be a major challenge in research.
+The successful implementation significantly expands UAV operational capabilities in applications such as precision agriculture, where drones can navigate through dense crop canopies and greenhouse structures; industrial inspection, enabling access to complex machinery and infrastructure; and search-and-rescue operations in collapsed structures. By enabling efficient navigation through constrained spaces without compromising conventional flight performance, this technology increases mission success rates and operational flexibility.
 
-\vspace{150pt}
+% \vspace{100pt}
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
